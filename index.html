@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找新房</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+
+
+
+    <div id="page"></div>
+
+
+    <script src="./template.js"></script>
+    <script>
+
+        $(function () {
+            $.pages({
+                parentId:'page',
+                num: 65,
+                index: 2,
+                pages: 8,
+                click: function (e) {
+                    console.log(e);
+                }
+            })
+        });
+    </script>
+
+
+</body>
+</html>

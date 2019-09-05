@@ -1,0 +1,132 @@
+/************
+ * 初始样式  *
+ ***********/
+body,
+div,
+span,
+p,
+form,
+input,
+select,
+textarea,
+button,
+fieldset,
+table,
+th,
+td,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+i {
+    margin: 0;
+    padding: 0; }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+ul,
+ol,
+li {
+    list-style: none; }
+
+h1,
+h2,
+h3 {
+    font-size: 100%;
+    font-weight: normal; }
+
+input,
+select,
+textarea,
+button {
+    vertical-align: middle;
+    border: 1px solid #ccc; }
+
+img {
+    border: none;
+    vertical-align: middle; }
+
+a {
+    text-decoration: none;
+    color: inherit; }
+
+html {
+    font-family: 微软雅黑,"Microsoft Yahei",'Arial', "sans-serif";
+    color: #333;
+    font-size: 14px; }
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer; }
+
+/***********
+ * 工具样式 *
+ * ********/
+.clear-float:before,
+.clear-float:after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden; }
+
+.rows-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden; }
+
+.text-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+
+.none {
+    display: none; }
+
+.pages {
+    position: relative;
+    padding: 40px 0;
+    font-family: "Source Han Sans CN Light",微软雅黑,"Microsoft YaHei",serif;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #666666; }
+.pages .num {
+    float: left; }
+.pages .total {
+    float: right; }
+.pages > ul {
+    display: inline-block;
+    margin-right: 70px;
+    margin-left: 70px; }
+.pages > ul > li {
+    position: relative;
+    float: left;
+    height: 28px;
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    margin-right: 15px;
+    font-size: 14px;
+    padding: 0 10px;
+    color: #666666;
+    cursor: pointer; }
+.pages > ul > li.tip {
+    background-color: transparent;
+    cursor: default; }
+.pages > ul > li.active {
+    background-color: #fdc885;
+    color: #404041; }
+
+.pages::after {
+    content: "";
+    display: block;
+    clear: both; }
